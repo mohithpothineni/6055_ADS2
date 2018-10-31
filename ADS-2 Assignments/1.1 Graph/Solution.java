@@ -17,7 +17,7 @@ public final class Solution {
      * displays output on console.
      *
      * @param      args  The command line arguments.
-     * 
+     *
      * Time complexity is O(n*v*e).
      * depends on no of inputs.
      * no of vertices and edges
@@ -39,7 +39,7 @@ public final class Solution {
         for (int j = 0; j < edge; j++) {
             String[] edgeinput = scan.nextLine().split(" ");
             g.addEdge(Integer.parseInt(
-                edgeinput[0]), Integer.parseInt(edgeinput[1]));
+                          edgeinput[0]), Integer.parseInt(edgeinput[1]));
         }
 
         System.out.println(g.vertexs() + " vertices, " + g.edges() + " edges");
@@ -53,21 +53,21 @@ public final class Solution {
             for (int i = 0; i < vertex; i++) {
                 s.append(map.get(i) + ": ");
                 for (int j : g.adj(i)) {
-                s.append(map.get(j) + " ");
+                    s.append(map.get(j) + " ");
+                }
+                s.append("\n");
             }
-            s.append("\n");
-        }
-        System.out.println(s.toString().trim());
+            System.out.println(s.toString().trim());
         } else {
             for (int i = 0; i < vertex; i++) {
                 for (int j = 0; j < vertex; j++) {
                     if (g.hasEdge(i, j)) {
                         System.out.print("1 ");
-                } else {
-                    System.out.print("0 ");
+                    } else {
+                        System.out.print("0 ");
+                    }
                 }
-                }
-            System.out.println();
+                System.out.println();
             }
         }
     }
