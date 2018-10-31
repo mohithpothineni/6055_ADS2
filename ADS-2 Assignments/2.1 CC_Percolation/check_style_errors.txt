@@ -3,13 +3,8 @@ Audit done.
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] C:\Users\Mohath\Desktop\6055_ADS2\ADS-2 Assignments\2.1 CC_Percolation\Graph.java:41:16: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
-[ERROR] C:\Users\Mohath\Desktop\6055_ADS2\ADS-2 Assignments\2.1 CC_Percolation\Graph.java:49:16: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
 Audit done.
-Checkstyle ends with 2 errors.
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] C:\Users\Mohath\Desktop\6055_ADS2\ADS-2 Assignments\2.1 CC_Percolation\Solution.java:17: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 1 errors.

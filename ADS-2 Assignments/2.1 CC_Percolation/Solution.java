@@ -14,7 +14,7 @@ final class Solution {
     /**
      * main method that drives the program.
      * @param      args  The arguments
-     * Time complexity  O(N) 
+     * Time complexity  O(N)
      * since
      * we are using while loop.
      */
