@@ -1,0 +1,9 @@
+[master 9c0a956] "ads2_m1_a1_1: 8/8 testcases passed. Cannot run hidden testcases as Server is unreachablecheck_style score: 1/1 "
+ 4 files changed, 12 insertions(+), 12 deletions(-)
+ create mode 100644 ADS-2 Assignments/1.1 Graph/md5/score.txt
+ create mode 100644 ADS-2 Assignments/1.1 Graph/result/score.json
+fatal: NotSupportedException encountered.
+   The ServicePointManager does not support proxies with the https scheme.
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+To https://github.com/mohithpothineni/6055_ADS2.git
+   2e43e1c..9c0a956  master -> master
