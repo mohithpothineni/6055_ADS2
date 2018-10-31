@@ -23,7 +23,7 @@ public final class Solution {
             d.addEdge(scan.nextInt(), scan.nextInt());
         }
         DirectedCycle dc = new DirectedCycle(d);
-        if (!dc.hasCycle()) {
+        if (dc.hasCycle()) {
             System.out.println("Cycle exists.");
         } else {
             System.out.println("Cycle doesn't exists.");
