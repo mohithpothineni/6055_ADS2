@@ -1,5 +1,6 @@
 import java.util.Scanner;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 /**
  * Class for page rank.
@@ -11,10 +12,17 @@ class PageRank {
      */
     private Digraph digraph;
 
+    private Digraph revdigraph;
+    
+    void addrev() {
+        this.revdigraph = digraph.reverse();
+        //System.out.println(revdigraph);
+    }
+
     /**
      * array of rankings.
      */
-    private double[] prs;
+    private Double[] prs;
 
     /**
      * it stores incomings of a vertex.
@@ -29,10 +37,12 @@ class PageRank {
     PageRank(final Digraph graph) {
         this.digraph = graph;
 
-        this.prs = new double[this.digraph.V()];
+        this.prs = new Double[this.digraph.V()];
         for (int k = 0; k < this.prs.length; k++) {
-            this.prs[k] = (double) 1 / this.prs.length;
+            this.prs[k] = (double) 1 / (double) this.prs.length;
         }
+
+
     }
 
     /**
@@ -54,22 +64,26 @@ class PageRank {
      *
      * @return     The pr.
      */
-    double getPR(final int v) {
+    Double getPR(final int v) {
         helper2();
         final int repetetions = 1000;
         for (int i = 0; i < repetetions; i++) {
-            double[] result = new double[digraph.V()];
+            Double[] result = new Double[digraph.V()];
             for (int j = 0; j < digraph.V(); j++) {
-                double res = 0.00000;
+                Double res = 0.00000;
                 for (int inc : this.it[j]) {
-                    res += (double) this.prs[inc] / this.digraph.outdegree(inc);
+                    res += (double) this.prs[inc] / (double) this.digraph.outdegree(inc);    
                     //System.out.println(result);
                 }
-                result[j] = (double) res;
+                result[j] = res;
+            }
+            if(prs.equals(result)) {
+                return prs[v];
             }
             for (int n = 0; n < prs.length; n++) {
-                prs[n] = (double) result[n];
+                prs[n] = result[n];
             }
+
 
             //System.out.println(Arrays.toString(prs));
         }
@@ -85,23 +99,9 @@ class PageRank {
      */
     Iterable<Integer> helper1(final int v) {
         //find the incoming vertices values
-        ArrayList<Integer> adjc = new ArrayList<Integer>();
-        for (int m = 0; m < this.digraph.V(); m++) {
-            Iterable<Integer> adj = null;
-            if (m != v) {
-                adj = this.digraph.adj(m);
-                for (int inc : adj) {
-                    if (inc == v) {
-                        adjc.add(m);
-                    }
-                }
-
-
-            }
-
-        }
-
-        return adjc;
+        Iterable<Integer> adj = null;
+        adj = this.revdigraph.adj(v);
+        return adj;
     }
     /**
      * Returns a string representation of the object.
@@ -112,7 +112,7 @@ class PageRank {
 
         String result = "";
         for (int i = 0; i < digraph.V(); i++) {
-            double tmp = (double) this.getPR(i);
+            Double tmp = (Double) this.getPR(i);
             result += i + " - " + tmp + "\n";
         }
         return result;
@@ -162,9 +162,25 @@ public final class Solution {
         }
 
         System.out.println(digraph);
+        for(int tm = 0; tm < digraph.V(); tm++) {
+            if(digraph.outdegree(tm) == 0) {
+                //System.out.println(tm);
+                for(int tm2 = 0; tm2 < digraph.V(); tm2++) {
+                    //System.out.print("tm2 is "+tm2+" " );
+                    if (tm2!=tm) {
+                        digraph.addEdge(tm,tm2);    
+                    }
+                    
+                }
+            }
+        }
 
+
+
+        
         // Create page rank object and pass the graph object to the constructor
         PageRank pagerank = new PageRank(digraph);
+        pagerank.addrev();
         // print the page rank object
         System.out.print(pagerank);
 
