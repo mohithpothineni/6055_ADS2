@@ -66,8 +66,8 @@ class PageRank {
      */
     Double getPR(final int v) {
         helper2();
-        final int repetetions = 999;
-        for (int i = 1; i < repetetions; i++) {
+        final int repetetions = 1000;
+        for (int i = 0; i < repetetions; i++) {
             Double[] result = new Double[digraph.V()];
             for (int j = 0; j < digraph.V(); j++) {
                 Double res = 0.00000;
