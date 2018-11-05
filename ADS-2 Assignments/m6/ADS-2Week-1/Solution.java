@@ -78,9 +78,9 @@ class PageRank {
                 result[j] = res;
             }
             
-            //if (prs.equals(result)) {
-            //    return prs[v];
-            //}
+            if (prs.equals(result)) {
+                return prs[v];
+            }
             for (int n = 0; n < prs.length; n++) {
                 prs[n] = result[n];
             }
