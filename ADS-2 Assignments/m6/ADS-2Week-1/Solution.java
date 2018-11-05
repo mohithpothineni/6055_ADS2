@@ -77,7 +77,7 @@ class PageRank {
                 }
                 result[j] = res;
             }
-            
+
             if (prs.equals(result)) {
                 return prs[v];
             }
