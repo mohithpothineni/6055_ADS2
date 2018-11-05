@@ -50,7 +50,7 @@ public class Bag<Item> implements Iterable<Item> {
      *
      * @return    size of bag.
      */
-    public int size(){
+    public int size() {
         return n;
     }
 
