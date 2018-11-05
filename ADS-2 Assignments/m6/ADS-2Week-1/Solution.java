@@ -13,7 +13,7 @@ class PageRank {
     private Digraph digraph;
 
     private Digraph revdigraph;
-    
+
     void addrev() {
         this.revdigraph = digraph.reverse();
         //System.out.println(revdigraph);
@@ -66,20 +66,21 @@ class PageRank {
      */
     Double getPR(final int v) {
         helper2();
-        final int repetetions = 1000;
-        for (int i = 0; i < repetetions; i++) {
+        final int repetetions = 999;
+        for (int i = 1; i < repetetions; i++) {
             Double[] result = new Double[digraph.V()];
             for (int j = 0; j < digraph.V(); j++) {
                 Double res = 0.00000;
                 for (int inc : this.it[j]) {
-                    res += (double) this.prs[inc] / (double) this.digraph.outdegree(inc);    
+                    res += (double) this.prs[inc] / (double) this.digraph.outdegree(inc);
                     //System.out.println(result);
                 }
                 result[j] = res;
             }
-            if(prs.equals(result)) {
-                return prs[v];
-            }
+            
+            //if (prs.equals(result)) {
+            //    return prs[v];
+            //}
             for (int n = 0; n < prs.length; n++) {
                 prs[n] = result[n];
             }
@@ -162,22 +163,22 @@ public final class Solution {
         }
 
         System.out.println(digraph);
-        for(int tm = 0; tm < digraph.V(); tm++) {
-            if(digraph.outdegree(tm) == 0) {
+        for (int tm = 0; tm < digraph.V(); tm++) {
+            if (digraph.outdegree(tm) == 0) {
                 //System.out.println(tm);
-                for(int tm2 = 0; tm2 < digraph.V(); tm2++) {
+                for (int tm2 = 0; tm2 < digraph.V(); tm2++) {
                     //System.out.print("tm2 is "+tm2+" " );
-                    if (tm2!=tm) {
-                        digraph.addEdge(tm,tm2);    
+                    if (tm2 != tm) {
+                        digraph.addEdge(tm, tm2);
                     }
-                    
+
                 }
             }
         }
 
 
 
-        
+
         // Create page rank object and pass the graph object to the constructor
         PageRank pagerank = new PageRank(digraph);
         pagerank.addrev();
