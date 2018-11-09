@@ -263,9 +263,10 @@ implements Iterable<Integer> {
      * Time complexity is O(log N).
      */
     private void swim(final int k) {
-        while (k > 1 && greater(k / 2, k)) {
-            exch(k, k / 2);
-            k = k / 2;
+        int k2 = k;
+        while (k2 > 1 && greater(k2 / 2, k2)) {
+            exch(k2, k2 / 2);
+            k2 = k2 / 2;
         }
     }
     /**
@@ -275,16 +276,17 @@ implements Iterable<Integer> {
      * Time complexity is O(log N).
      */
     private void sink(final int k) {
-        while (2 * k <= n) {
-            int j = 2 * k;
+        int k2 = k;
+        while (2 * k2 <= n) {
+            int j = 2 * k2;
             if (j < n && greater(j, j + 1)) {
                 j++;
             }
-            if (!greater(k, j)) {
+            if (!greater(k2, j)) {
                 break;
             }
-            exch(k, j);
-            k = j;
+            exch(k2, j);
+            k2 = j;
         }
     }
 
