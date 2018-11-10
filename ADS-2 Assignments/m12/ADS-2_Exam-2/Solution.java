@@ -19,6 +19,15 @@ final class Solution {
      * calls appropriate methods.
      * displays output to consle.
      *
+     * Worse case for graph output
+     * Time complexity O(E)
+     *
+     * Worse case when finding path
+     * Time complexity O(n*ElogV)
+     * n - number of queries
+     * E - number of edges
+     * V - no of vertices
+     *
      * @param      args  The arguments
      */
     public static void main(final String[] args) {
