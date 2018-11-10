@@ -1,0 +1,42 @@
+Starting audit...
+Audit done.
+Starting audit...
+[ERROR] C:\Users\Mohath\Desktop\6055_ADS2\ADS-2 Assignments\m12\ADS-2_Exam-2\DijkstraSP.java:122: Line has trailing spaces. [RegexpSingleline]
+[ERROR] C:\Users\Mohath\Desktop\6055_ADS2\ADS-2 Assignments\m12\ADS-2_Exam-2\DijkstraSP.java:123:16: 'catch' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\Mohath\Desktop\6055_ADS2\ADS-2 Assignments\m12\ADS-2_Exam-2\DijkstraSP.java:126: Line has trailing spaces. [RegexpSingleline]
+Audit done.
+Checkstyle ends with 3 errors.
+Starting audit...
+Audit done.
+Starting audit...
+[ERROR] C:\Users\Mohath\Desktop\6055_ADS2\ADS-2 Assignments\m12\ADS-2_Exam-2\EdgeWeightedGraph.java:169: Line is longer than 80 characters (found 93). [LineLength]
+Audit done.
+Checkstyle ends with 1 errors.
+Starting audit...
+Audit done.
+Starting audit...
+[ERROR] C:\Users\Mohath\Desktop\6055_ADS2\ADS-2 Assignments\m12\ADS-2_Exam-2\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] C:\Users\Mohath\Desktop\6055_ADS2\ADS-2 Assignments\m12\ADS-2_Exam-2\Solution.java:8: Missing a Javadoc comment. [JavadocType]
+[ERROR] C:\Users\Mohath\Desktop\6055_ADS2\ADS-2 Assignments\m12\ADS-2_Exam-2\Solution.java:8:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
+[ERROR] C:\Users\Mohath\Desktop\6055_ADS2\ADS-2 Assignments\m12\ADS-2_Exam-2\Solution.java:10:1: File contains tab characters (this is the first instance). [FileTabCharacter]
+[ERROR] C:\Users\Mohath\Desktop\6055_ADS2\ADS-2 Assignments\m12\ADS-2_Exam-2\Solution.java:10:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\Mohath\Desktop\6055_ADS2\ADS-2 Assignments\m12\ADS-2_Exam-2\Solution.java:10:33: Parameter args should be final. [FinalParameters]
+[ERROR] C:\Users\Mohath\Desktop\6055_ADS2\ADS-2 Assignments\m12\ADS-2_Exam-2\Solution.java:17:28: '<' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\Mohath\Desktop\6055_ADS2\ADS-2 Assignments\m12\ADS-2_Exam-2\Solution.java:17:34: ';' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] C:\Users\Mohath\Desktop\6055_ADS2\ADS-2 Assignments\m12\ADS-2_Exam-2\Solution.java:25: Line has trailing spaces. [RegexpSingleline]
+[ERROR] C:\Users\Mohath\Desktop\6055_ADS2\ADS-2 Assignments\m12\ADS-2_Exam-2\Solution.java:32: Line is longer than 80 characters (found 90). [LineLength]
+[ERROR] C:\Users\Mohath\Desktop\6055_ADS2\ADS-2 Assignments\m12\ADS-2_Exam-2\Solution.java:40: Line has trailing spaces. [RegexpSingleline]
+[ERROR] C:\Users\Mohath\Desktop\6055_ADS2\ADS-2 Assignments\m12\ADS-2_Exam-2\Solution.java:47: Line is longer than 80 characters (found 87). [LineLength]
+[ERROR] C:\Users\Mohath\Desktop\6055_ADS2\ADS-2 Assignments\m12\ADS-2_Exam-2\Solution.java:48: Line is longer than 80 characters (found 110). [LineLength]
+[ERROR] C:\Users\Mohath\Desktop\6055_ADS2\ADS-2 Assignments\m12\ADS-2_Exam-2\Solution.java:57: Line has trailing spaces. [RegexpSingleline]
+[ERROR] C:\Users\Mohath\Desktop\6055_ADS2\ADS-2 Assignments\m12\ADS-2_Exam-2\Solution.java:64: Line has trailing spaces. [RegexpSingleline]
+[ERROR] C:\Users\Mohath\Desktop\6055_ADS2\ADS-2 Assignments\m12\ADS-2_Exam-2\Solution.java:65:20: 'catch' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\Mohath\Desktop\6055_ADS2\ADS-2 Assignments\m12\ADS-2_Exam-2\Solution.java:76: Line has trailing spaces. [RegexpSingleline]
+[ERROR] C:\Users\Mohath\Desktop\6055_ADS2\ADS-2 Assignments\m12\ADS-2_Exam-2\Solution.java:82: Line has trailing spaces. [RegexpSingleline]
+[ERROR] C:\Users\Mohath\Desktop\6055_ADS2\ADS-2 Assignments\m12\ADS-2_Exam-2\Solution.java:85:42: '-' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\Mohath\Desktop\6055_ADS2\ADS-2 Assignments\m12\ADS-2_Exam-2\Solution.java:86: Line has trailing spaces. [RegexpSingleline]
+[ERROR] C:\Users\Mohath\Desktop\6055_ADS2\ADS-2 Assignments\m12\ADS-2_Exam-2\Solution.java:90: Line has trailing spaces. [RegexpSingleline]
+Audit done.
+Checkstyle ends with 21 errors.
+Starting audit...
+Audit done.
