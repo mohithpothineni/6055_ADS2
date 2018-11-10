@@ -166,7 +166,8 @@ public class EdgeWeightedGraph {
      * Returns a string representation of the edge-weighted graph.
      * This method takes time proportional to <em>E</em> + <em>V</em>.
      *
-     * @return the number of vertices <em>V</em>, followed by the number of edges <em>E</em>,
+     * @return the number of vertices <em>V</em>,
+     * followed by the number of edges <em>E</em>,
      *         followed by the <em>V</em> adjacency lists of edges
      */
     public String toString() {

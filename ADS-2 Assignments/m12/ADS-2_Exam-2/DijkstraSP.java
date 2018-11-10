@@ -28,7 +28,7 @@ class DijkstraSP {
      * @param      source  The source
      */
     DijkstraSP(final EdgeWeightedGraph g,
-                final int source) {
+               final int source) {
         graph = g;
         distTo = new Double[graph.vertices()];
         edgeTo = new Edge[graph.vertices()];
@@ -52,7 +52,7 @@ class DijkstraSP {
      * @param      vertex  The vertex
      */
     private void relax(final Edge edge,
-    final int vertex) {
+                       final int vertex) {
         int vertexTwo = edge.other(vertex);
         if (distTo[vertexTwo] > distTo[vertex] + edge.weight()) {
             distTo[vertexTwo] = distTo[vertex] + edge.weight();
@@ -119,11 +119,11 @@ class DijkstraSP {
         try {
             for (Edge each : pathTo(vertex)) {
                 sum += each.weight();
-            }    
-        } catch(Exception e) {
+            }
+        } catch (Exception e) {
             return null;
         }
-        
+
         return sum;
     }
 }
