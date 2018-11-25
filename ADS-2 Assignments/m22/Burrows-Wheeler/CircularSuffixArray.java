@@ -1,4 +1,3 @@
-import edu.princeton.cs.algs4.Queue;
 import java.util.Arrays;
 import java.util.Comparator;
 public class CircularSuffixArray {
