@@ -132,6 +132,11 @@ public class SeamCarver {
         return indices;
     }
     private void reset(final double[][] distTo) {
+        for (int i = 0; i < distTo.length; i++) {
+            for (int j = 0; j < distTo[i].length; j++) {
+                distTo[i][j] = Double.MAX_VALUE;
+            }
+        }
     }
     private void relaxV(final int row, final int col, final int[][] edgeTo,
                         final double[][] distTo) {
