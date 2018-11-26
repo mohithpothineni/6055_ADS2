@@ -560,14 +560,12 @@ Starting audit...
 Audit done.
 Checkstyle ends with 465 errors.
 Starting audit...
-[ERROR] C:\Users\Mohath\Desktop\6055_ADS2\ADS-2 Assignments\m16\boggle\BoggleSolver.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\Mohath\Desktop\6055_ADS2\ADS-2 Assignments\m16\boggle\BoggleSolver.java:11:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\Mohath\Desktop\6055_ADS2\ADS-2 Assignments\m16\boggle\BoggleSolver.java:18:5: Class 'BoggleSolver' looks like designed for extension (can be subclassed), but the method 'getAllValidWords' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'BoggleSolver' final or making the method 'getAllValidWords' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
-[ERROR] C:\Users\Mohath\Desktop\6055_ADS2\ADS-2 Assignments\m16\boggle\BoggleSolver.java:18:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\Mohath\Desktop\6055_ADS2\ADS-2 Assignments\m16\boggle\BoggleSolver.java:72:5: Class 'BoggleSolver' looks like designed for extension (can be subclassed), but the method 'scoreOf' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'BoggleSolver' final or making the method 'scoreOf' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
-[ERROR] C:\Users\Mohath\Desktop\6055_ADS2\ADS-2 Assignments\m16\boggle\BoggleSolver.java:72:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\Mohath\Desktop\6055_ADS2\ADS-2 Assignments\m16\boggle\BoggleSolver.java:24:5: Class 'BoggleSolver' looks like designed for extension (can be subclassed), but the method 'getAllValidWords' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'BoggleSolver' final or making the method 'getAllValidWords' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
+[ERROR] C:\Users\Mohath\Desktop\6055_ADS2\ADS-2 Assignments\m16\boggle\BoggleSolver.java:24:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\Mohath\Desktop\6055_ADS2\ADS-2 Assignments\m16\boggle\BoggleSolver.java:79:5: Class 'BoggleSolver' looks like designed for extension (can be subclassed), but the method 'scoreOf' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'BoggleSolver' final or making the method 'scoreOf' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
+[ERROR] C:\Users\Mohath\Desktop\6055_ADS2\ADS-2 Assignments\m16\boggle\BoggleSolver.java:79:5: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
-Checkstyle ends with 6 errors.
+Checkstyle ends with 4 errors.
 Starting audit...
 [ERROR] C:\Users\Mohath\Desktop\6055_ADS2\ADS-2 Assignments\m16\boggle\In.java:28: Line has trailing spaces. [RegexpSingleline]
 [ERROR] C:\Users\Mohath\Desktop\6055_ADS2\ADS-2 Assignments\m16\boggle\In.java:33: Line has trailing spaces. [RegexpSingleline]

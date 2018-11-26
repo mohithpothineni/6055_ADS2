@@ -1,17 +1,19 @@
+
 /**
  * Class for solution.
  */
 public final class Solution {
+
     /**
      * Constructs the object.
      */
     private Solution() {
-        // empty constructor
     }
+
     /**
      * Main method.
      *
-     * @param      args  The arguments
+     * @param      args  The command line arguments.
      */
     public static void main(final String[] args) {
         String caseType = StdIn.readLine();

@@ -1,13 +1,19 @@
 import java.util.ArrayList;
+
 /**
  * Class for boggle solver.
  */
-
 public class BoggleSolver {
     /**
      * TST to store values.
      */
     private TST<Integer> tstDict;
+
+    /**
+     * Constructs the object.
+     *
+     * @param      dictionary  The dictionary
+     */
     public BoggleSolver(final String[] dictionary) {
         tstDict = new TST<Integer>();
         for (int i = 0; i < dictionary.length; i++) {
@@ -26,6 +32,7 @@ public class BoggleSolver {
         }
         return arraylist;
     }
+
     /**
      * Depth first search.
      * Complexity is O(V + E)
