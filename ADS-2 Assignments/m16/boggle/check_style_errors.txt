@@ -561,23 +561,13 @@ Audit done.
 Checkstyle ends with 465 errors.
 Starting audit...
 [ERROR] C:\Users\Mohath\Desktop\6055_ADS2\ADS-2 Assignments\m16\boggle\BoggleSolver.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\Mohath\Desktop\6055_ADS2\ADS-2 Assignments\m16\boggle\BoggleSolver.java:1: Missing a Javadoc comment. [JavadocType]
-[ERROR] C:\Users\Mohath\Desktop\6055_ADS2\ADS-2 Assignments\m16\boggle\BoggleSolver.java:2: Line is longer than 80 characters (found 93). [LineLength]
-[ERROR] C:\Users\Mohath\Desktop\6055_ADS2\ADS-2 Assignments\m16\boggle\BoggleSolver.java:2:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] C:\Users\Mohath\Desktop\6055_ADS2\ADS-2 Assignments\m16\boggle\BoggleSolver.java:3: Line is longer than 80 characters (found 104). [LineLength]
-[ERROR] C:\Users\Mohath\Desktop\6055_ADS2\ADS-2 Assignments\m16\boggle\BoggleSolver.java:4:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\Mohath\Desktop\6055_ADS2\ADS-2 Assignments\m16\boggle\BoggleSolver.java:4:29: Parameter dictionary should be final. [FinalParameters]
-[ERROR] C:\Users\Mohath\Desktop\6055_ADS2\ADS-2 Assignments\m16\boggle\BoggleSolver.java:8: Line is longer than 80 characters (found 88). [LineLength]
-[ERROR] C:\Users\Mohath\Desktop\6055_ADS2\ADS-2 Assignments\m16\boggle\BoggleSolver.java:9:9: Class 'BoggleSolver' looks like designed for extension (can be subclassed), but the method 'getAllValidWords' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'BoggleSolver' final or making the method 'getAllValidWords' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
-[ERROR] C:\Users\Mohath\Desktop\6055_ADS2\ADS-2 Assignments\m16\boggle\BoggleSolver.java:9:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\Mohath\Desktop\6055_ADS2\ADS-2 Assignments\m16\boggle\BoggleSolver.java:9:50: Parameter board should be final. [FinalParameters]
-[ERROR] C:\Users\Mohath\Desktop\6055_ADS2\ADS-2 Assignments\m16\boggle\BoggleSolver.java:13: Line is longer than 80 characters (found 90). [LineLength]
-[ERROR] C:\Users\Mohath\Desktop\6055_ADS2\ADS-2 Assignments\m16\boggle\BoggleSolver.java:14: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] C:\Users\Mohath\Desktop\6055_ADS2\ADS-2 Assignments\m16\boggle\BoggleSolver.java:15:9: Class 'BoggleSolver' looks like designed for extension (can be subclassed), but the method 'scoreOf' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'BoggleSolver' final or making the method 'scoreOf' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
-[ERROR] C:\Users\Mohath\Desktop\6055_ADS2\ADS-2 Assignments\m16\boggle\BoggleSolver.java:15:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\Mohath\Desktop\6055_ADS2\ADS-2 Assignments\m16\boggle\BoggleSolver.java:15:28: Parameter word should be final. [FinalParameters]
+[ERROR] C:\Users\Mohath\Desktop\6055_ADS2\ADS-2 Assignments\m16\boggle\BoggleSolver.java:11:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\Mohath\Desktop\6055_ADS2\ADS-2 Assignments\m16\boggle\BoggleSolver.java:18:5: Class 'BoggleSolver' looks like designed for extension (can be subclassed), but the method 'getAllValidWords' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'BoggleSolver' final or making the method 'getAllValidWords' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
+[ERROR] C:\Users\Mohath\Desktop\6055_ADS2\ADS-2 Assignments\m16\boggle\BoggleSolver.java:18:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\Mohath\Desktop\6055_ADS2\ADS-2 Assignments\m16\boggle\BoggleSolver.java:72:5: Class 'BoggleSolver' looks like designed for extension (can be subclassed), but the method 'scoreOf' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'BoggleSolver' final or making the method 'scoreOf' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
+[ERROR] C:\Users\Mohath\Desktop\6055_ADS2\ADS-2 Assignments\m16\boggle\BoggleSolver.java:72:5: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
-Checkstyle ends with 16 errors.
+Checkstyle ends with 6 errors.
 Starting audit...
 [ERROR] C:\Users\Mohath\Desktop\6055_ADS2\ADS-2 Assignments\m16\boggle\In.java:28: Line has trailing spaces. [RegexpSingleline]
 [ERROR] C:\Users\Mohath\Desktop\6055_ADS2\ADS-2 Assignments\m16\boggle\In.java:33: Line has trailing spaces. [RegexpSingleline]
@@ -1129,3 +1119,5 @@ Starting audit...
 [ERROR] C:\Users\Mohath\Desktop\6055_ADS2\ADS-2 Assignments\m16\boggle\StdRandom.java:589: 'for' construct must use '{}'s. [NeedBraces]
 Audit done.
 Checkstyle ends with 183 errors.
+Starting audit...
+Audit done.
