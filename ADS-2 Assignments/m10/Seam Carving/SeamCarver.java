@@ -175,6 +175,12 @@ public class SeamCarver {
     }
 
     public void removeVerticalSeam(final int[] seam) {
+        for (int row = 0; row < height; row++) {
+            for (int col = seam[row]; col < width - 1; col++) {
+                this.picture.set(col, row, this.picture.get(col + 1, row));
+            }
+        }
+        width--;
     }
 }
 
