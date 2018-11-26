@@ -243,10 +243,11 @@ Starting audit...
 [ERROR] C:\Users\Mohath\Desktop\6055_ADS2\ADS-2 Assignments\m10\Seam Carving\SeamCarver.java:100:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\Mohath\Desktop\6055_ADS2\ADS-2 Assignments\m10\Seam Carving\SeamCarver.java:134:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\Mohath\Desktop\6055_ADS2\ADS-2 Assignments\m10\Seam Carving\SeamCarver.java:141:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\Mohath\Desktop\6055_ADS2\ADS-2 Assignments\m10\Seam Carving\SeamCarver.java:168:5: Class 'SeamCarver' looks like designed for extension (can be subclassed), but the method 'removeHorizontalSeam' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'SeamCarver' final or making the method 'removeHorizontalSeam' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
 [ERROR] C:\Users\Mohath\Desktop\6055_ADS2\ADS-2 Assignments\m10\Seam Carving\SeamCarver.java:168:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\Mohath\Desktop\6055_ADS2\ADS-2 Assignments\m10\Seam Carving\SeamCarver.java:171:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\Mohath\Desktop\6055_ADS2\ADS-2 Assignments\m10\Seam Carving\SeamCarver.java:177:5: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
-Checkstyle ends with 23 errors.
+Checkstyle ends with 24 errors.
 Starting audit...
 [ERROR] C:\Users\Mohath\Desktop\6055_ADS2\ADS-2 Assignments\m10\Seam Carving\ShowEnergy.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\Mohath\Desktop\6055_ADS2\ADS-2 Assignments\m10\Seam Carving\ShowEnergy.java:5: Line has trailing spaces. [RegexpSingleline]
