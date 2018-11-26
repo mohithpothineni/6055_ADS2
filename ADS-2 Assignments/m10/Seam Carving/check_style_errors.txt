@@ -243,8 +243,8 @@ Starting audit...
 [ERROR] C:\Users\Mohath\Desktop\6055_ADS2\ADS-2 Assignments\m10\Seam Carving\SeamCarver.java:100:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\Mohath\Desktop\6055_ADS2\ADS-2 Assignments\m10\Seam Carving\SeamCarver.java:134:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\Mohath\Desktop\6055_ADS2\ADS-2 Assignments\m10\Seam Carving\SeamCarver.java:141:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\Mohath\Desktop\6055_ADS2\ADS-2 Assignments\m10\Seam Carving\SeamCarver.java:146:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\Mohath\Desktop\6055_ADS2\ADS-2 Assignments\m10\Seam Carving\SeamCarver.java:149:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\Mohath\Desktop\6055_ADS2\ADS-2 Assignments\m10\Seam Carving\SeamCarver.java:168:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\Mohath\Desktop\6055_ADS2\ADS-2 Assignments\m10\Seam Carving\SeamCarver.java:171:5: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
 Checkstyle ends with 23 errors.
 Starting audit...
