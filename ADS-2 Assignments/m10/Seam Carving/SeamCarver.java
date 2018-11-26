@@ -1,0 +1,126 @@
+import java.awt.Color;
+public class SeamCarver {
+    private Picture picture;
+    private int width;
+    private int height;
+    public SeamCarver(final Picture pic) {
+        this.picture = pic;
+        width = picture.width();
+        height = picture.height();
+    }
+    public Picture picture() {
+        return picture;
+    }
+    public int width() {
+        return width;
+    }
+    public int height() {
+        return height;
+    }
+    public double energy(final int x, final int y) {
+        final double num = 1000.0;
+        if (x == 0 || y == 0 || y == (height - 1) || x == (width - 1)) {
+            return num;
+        }
+        double xCoordinate = 0.0;
+        double yCoordinate = 0.0;
+        Color object = picture.get(x, y);
+        Color leftObj = picture.get(x, y - 1);
+        Color rightObj = picture.get(x, y + 1);
+        double xRed = Math.abs((leftObj.getRed() - rightObj.getRed()));
+        double xGreen = Math.abs((leftObj.getGreen() - rightObj.getGreen()));
+        double xBlue = Math.abs((leftObj.getBlue() - rightObj.getBlue()));
+        xCoordinate = Math.pow(xRed, 2) + Math.pow(xBlue, 2)
+                      + Math.pow(xGreen, 2);
+        Color topObj = picture.get(x - 1, y);
+        Color bottomObj = picture.get(x + 1, y);
+        double yRed = Math.abs((topObj.getRed() - bottomObj.getRed()));
+        double yGreen = Math.abs((topObj.getGreen() - bottomObj.getGreen()));
+        double yBlue = Math.abs((topObj.getBlue() - bottomObj.getBlue()));
+        yCoordinate = Math.pow(yRed, 2) + Math.pow(yBlue, 2)
+                      + Math.pow(yGreen, 2);
+        double sum = Math.sqrt((xCoordinate + yCoordinate));
+        return sum;
+    }
+    public int[] findHorizontalSeam() {
+        final int n = 1000;
+        int[][] edgeTo = new int[height][width];
+        double[][] distTo = new double[height][width];
+        reset(distTo);
+        for (int row = 0; row < height; row++) {
+            distTo[row][0] = n;
+        }
+        // this is for relaxation.
+        for (int col = 0; col < width - 1; col++) {
+            for (int row = 0; row < height; row++) {
+                relaxH(row, col, edgeTo, distTo);
+            }
+        }
+        double minDist = Double.MAX_VALUE;
+        int minRow = 0;
+        for (int row = 0; row < height; row++) {
+            if (minDist > distTo[row][width - 1]) {
+                minDist = distTo[row][width - 1];
+                minRow = row;
+            }
+        }
+        int[] indices = new int[width];
+        //to find the horizontal seam.
+        for (int col = width - 1, row = minRow; col >= 0; col--) {
+            indices[col] = row;
+            row -= edgeTo[row][col];
+        }
+        return indices;
+    }
+    private void relaxH(final int row, final int col,
+                        final int[][] edgeTo, final double[][] distTo) {
+
+    }
+    public int[] findVerticalSeam() {
+        final double thousand = 1000.0;
+        double[][] energy = new double[height][width];
+        int[][] edgeTo = new int[height][width];
+        double[][] distTo = new double[height][width];
+        reset(distTo);
+        int[] indices = new int[height];
+        if (width == 1 || height == 1) {
+            return indices;
+        }
+        for (int i = 0; i < width; i++) {
+            distTo[0][i] = thousand;
+        }
+        for (int i = 0; i < height - 1; i++) {
+            for (int j = 0; j < width; j++) {
+                relaxV(i, j, edgeTo, distTo);
+            }
+        }
+        double minDist = Double.MAX_VALUE;
+        int minCol = 0;
+        for (int col = 0; col < width; col++) {
+            if (minDist > distTo[height - 1][col]) {
+                minDist = distTo[height - 1][col];
+                minCol = col;
+            }
+        }
+        //indices values of shortest path.
+        for (int row = height - 1, col = minCol; row >= 0; row--) {
+            indices[row] = col;
+            col -= edgeTo[row][col];
+        }
+        indices[0] = indices[1];
+        return indices;
+    }
+    private void reset(final double[][] distTo) {
+    }
+    private void relaxV(final int row, final int col, final int[][] edgeTo,
+                        final double[][] distTo) {
+
+    }
+
+    public void removeHorizontalSeam(final int[] seam) {
+    }
+
+    public void removeVerticalSeam(final int[] seam) {
+    }
+}
+
