@@ -1,5 +1,6 @@
 import java.util.Arrays;
 import java.util.Comparator;
+
 public class CircularSuffixArray {
     private String input;
     private Integer[] indices;
@@ -56,11 +57,4 @@ public class CircularSuffixArray {
         }
     	return indices[i];
     }
-    // public static void main(String[] args) {
-    //     CircularSuffixArray csa = new CircularSuffixArray("ABRACADABRA!");
-    //     for (int i = 0; i < csa.length(); ++i) {
-    //         StdOut.print(csa.index(i) + " ");
-    //     }
-    //     StdOut.println();
-    // }
 }

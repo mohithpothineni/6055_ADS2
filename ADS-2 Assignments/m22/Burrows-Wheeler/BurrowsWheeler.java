@@ -1,5 +1,6 @@
 import java.util.HashMap;
 import java.util.Arrays;
+
 public class BurrowsWheeler {
 	private static final int lgR  = 8;
     public static void transform() {

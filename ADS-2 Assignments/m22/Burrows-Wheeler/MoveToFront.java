@@ -1,4 +1,3 @@
-// import java.util.LinkedList;
 
 public class MoveToFront {
     private static final int lgR = 8;
