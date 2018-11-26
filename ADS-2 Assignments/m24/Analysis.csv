@@ -1,0 +1,5 @@
+Algorithm,Trail1,Trail2,Trail3,Trail4,Trail5,Average
+BoyerMoore,0,7,0,0,16,5.75
+BruteForce,15,6,15,16,16,17
+KMP,16,9,16,15,15,17.75
+RabinKarp,31,34,47,32,47,47.75
